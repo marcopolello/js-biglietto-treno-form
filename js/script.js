@@ -40,7 +40,10 @@ genera.addEventListener('click',
    // output dati biglietto
    document.getElementById('codice').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1) + 90000 );
    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1 ;
-});
+   // massimo di numeri su input per i km
+   if (km.length > 4) {
+    km = km.slice(0,4);
+  }
 
 // BOTTONE CHE RESETTA
 var annulla = document.getElementById('cancella');
@@ -54,3 +57,4 @@ annulla.addEventListener('click',
    document.getElementById('age').reset();
  }
 );
+});
