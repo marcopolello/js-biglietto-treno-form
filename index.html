@@ -16,7 +16,7 @@
         <div class="compila">
           <form id="user" class="myform" action="index.html" method="post">
             <label for="1stname 2ndname">Nome e Cognome</label> <br>
-            <input type="text" name="1st2ndname" value="">
+            <input id="nome" type="text" name="1st2ndname" value="">
           </form>
           <form id="trip" class="myform" action="index.html" method="post">
             <label for="">km da percorrere</label> <br>
@@ -47,11 +47,42 @@
 
       </div>
 
-      <h1></h1>
+      <div id="nascosto" style="display:none;">
 
-      <div class="">
+        <h1>IL TUO BIGLIETTO</h1>
 
-        <h6 id="biglietto"></h6>
+        <div class="square_biglietto clearfix">
+
+          <h3>DETTAGLIO PASSEGGERI</h3>
+          <hr>
+          <div class="dati_passeggero">
+            <h3>Nome Passeggero</h3>
+            <h3 id="name"></h3>
+          </div>
+
+          <div class="dati_biglietto">
+
+            <ul style="font-weight:bold;font-size:22px;">
+              <li> Offerta </li>
+              <li> Carrozza </li>
+              <li> Codice <br> CP </li>
+              <li> Costo <br> biglietto </li>
+            </ul>
+            <ul style="font-size::18px;">
+              <li id="offerta"> Offerta </li>
+              <li id="carrozza"></li>
+              <li id="codice"></li>
+              <li id="biglietto"></li>
+            </ul>
+
+          </div>
+
+
+          <h6 ></h6>
+
+        </div>
+
+
 
       </div>
 

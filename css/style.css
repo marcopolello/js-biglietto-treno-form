@@ -25,3 +25,37 @@ main{
   justify-content: space-between;
   margin-bottom: 50px;
 }
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.square_biglietto{
+  text-align: left;
+  background-color: white;
+  /* min-height: 200px; */
+  padding: 15px 10px;
+}
+.dati_passeggero{
+  padding: 10px;
+  background-color: grey;
+  min-height: 200px;
+  width: 30%;
+  float: left;
+}
+.dati_biglietto{
+  padding: 15px;
+  background-color: yellow;
+  min-height: 200px;
+  width: 70%;
+  float: left;
+}
+ul[style*="font-"]{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+ul[style*="font-"] li{
+ list-style-type: none;
+}
