@@ -1,0 +1,27 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* sfondo pagina */
+body{
+  background-color: blue;
+}
+/* margini form e intestazioni */
+main{
+  margin: 50px 200px;
+  text-align: center;
+}
+.square{
+  background-color: white;
+  border-radius: 20px;
+  min-height: 200px;
+  margin: 10px 0;
+}
+.compila{
+  padding: 20px 100px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}

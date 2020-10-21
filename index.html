@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>biglietto treno con form</title>
+  </head>
+  <body>
+
+    <main>
+
+      <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+      <div class="square">
+
+        <div class="compila">
+          <form class="" action="index.html" method="post">
+            <label for="1stname 2ndname">Nome e Cognome</label> <br>
+            <input type="text" name="1st2ndname" value="">
+          </form>
+          <form class="" action="index.html" method="post">
+            <label for="">km da percorrere</label> <br>
+            <input id="testokm" type="text" name="" value="" min="1" max="1000">
+          </form>
+          <form class="" action="index.html" method="post">
+            <label for="">Fascia d'età</label> <br>
+            <input id="etapasseggero" type="text" name="" value="" list="datalist">
+              <datalist id="datalist">
+                <select name="1st2ndname">
+                  <option>Minorenne</option>
+                  <option>Maggiorenne</option>
+                  <option>over > 65</option>
+                </select>
+            </datalist>
+          </form>
+        </div>
+
+        <div class="bottoni">
+          <form class="" action="index.html" method="post">
+            <input id="bottone" type="button" name="" value="genera">
+            <input type="button" name="" value="annulla">
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <h1></h1>
+
+      <div class="">
+
+        <h6 id="biglietto"></h6>
+
+      </div>
+
+
+
+    </main>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
