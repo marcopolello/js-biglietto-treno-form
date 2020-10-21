@@ -8,14 +8,13 @@
 
 
 // BOTTONE CHE GENERA BIGLIETTO
-var bottone = document.getElementById('bottone');
-bottone.addEventListener('click',
+var genera = document.getElementById('bottone');
+genera.addEventListener('click',
  function(){
    var euro = 0.21;
    var km = parseInt(document.getElementById('testokm').value);
    var eta = parseInt(document.getElementById('etapasseggero').value);
    var costoViaggio = euro * km;
-
 
    // SCONTO A SECONDA DELL'ETA DEL VIAGGIATORE
    var costoViaggioMinori = ((costoViaggio - (costoViaggio * 0.2)).toFixed(2));
@@ -29,4 +28,14 @@ bottone.addEventListener('click',
    } else {
      output.innerHTML = costoViaggio + "€"
    }
+   console.log(output);
 });
+// BOTTONE CHE RESETTA
+var annulla = document.getElementById('cancella');
+annulla.addEventListener('click',
+ function () {
+   document.getElementById('user').reset();
+   document.getElementById('trip').reset();
+   document.getElementById('age').reset();
+ }
+);
