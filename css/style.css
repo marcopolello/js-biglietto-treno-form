@@ -37,7 +37,8 @@ main{
   padding: 15px 10px;
 }
 .dati_passeggero{
-  padding: 10px;
+  padding: 20px 0;
+  text-align: center;
   background-color: grey;
   min-height: 200px;
   width: 30%;
