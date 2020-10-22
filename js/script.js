@@ -45,9 +45,9 @@ genera.addEventListener('click',
    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1 ;
 
    // massimo di numeri su input per i km
-   if (km.length > 4) {
+    if (km.length > 4) {
     km = km.slice(0,4);
-  }
+}
 
 // BOTTONE CHE RESETTA
 var annulla = document.getElementById('cancella');
