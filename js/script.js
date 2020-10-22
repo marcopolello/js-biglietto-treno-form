@@ -16,13 +16,14 @@ genera.addEventListener('click',
    // variabili
    var euro = 0.21;
    var km = parseInt(document.getElementById('testokm').value);
-   var eta = (document.getElementById('etapasseggero').value);
+   var eta = parseInt(document.getElementById('etapasseggero').value);
    var costoViaggio = euro * km;
    var passeggero = (document.getElementById('nome')).value;
    // SCONTO A SECONDA DELL'ETA DEL VIAGGIATORE
    var costoViaggioMinori = ((costoViaggio - (costoViaggio * 0.2)).toFixed(2));
    var costoViaggioAnziani = ((costoViaggio - (costoViaggio * 0.4)).toFixed(2));
    var output = document.getElementById('biglietto');
+
    // a seconda dell'età verrà visualizzato un costo biglietto
    if (eta <= 18 || eta == 'minorenne') {
      output.innerHTML = costoViaggioMinori + "€";
@@ -35,11 +36,14 @@ genera.addEventListener('click',
      document.getElementById('offerta').innerHTML = "Nessuno <br> sconto";
    }
    console.log(output);
+
    // stampo input ricevuto dall'utente per nome e cognome
    document.getElementById('name').innerHTML = passeggero;
+
    // output dati biglietto
    document.getElementById('codice').innerHTML = Math.floor(Math.random() * (100000 - 90000 + 1) + 90000 );
    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1 ;
+
    // massimo di numeri su input per i km
    if (km.length > 4) {
     km = km.slice(0,4);
